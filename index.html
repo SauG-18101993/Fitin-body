@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Font Awsome CDN Link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     <!-- swiper js CDN Link -->
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <!-- Custom css -->
      <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -18,12 +23,22 @@
       <nav class="navbar navbar-expand-xxl">
       <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="./images/Logo.png" alt="Logo" class="img-fluid">
+      <img src="./images/Logo.png" alt="Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="sm-btn">
+      <a class="cart-icon" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
+<button class="bg-xxl-search">
+            <img src="./images/search (3).png" alt="search (3)">
+          </button>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -52,15 +67,22 @@
           <a class="nav-link" href="#">Testimonials</a>
         </li>
         <li class="nav-item">
-          <form class="black-bg d-flex d-lg-none d-xl-flex" action="">
+          <form class="search-xxxl" action="">
             <button type="submit">
-              <img src="./images/search (3).png" alt="search (3)" class="img-fluid">
+              <img src="./images/search (3).png" alt="search (3)">
             </button>
             <input type="text" name="search-result">
           </form>
+          <button class="bg-xxl-search">
+            <img src="./images/search (3).png" alt="search (3)">
+          </button>
         </li>
         <li class="nav-item">
-          <a class="cart-icon" href="#"><img src="./images/Cart Logo.png" alt="Cart Logo" class="img-fluid"></a>
+          <a class="cart-icon" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></a>
         </li>
       </ul>
      <div class="nav-btn">
@@ -108,9 +130,6 @@
             <h1 class="title-1">
               Focusfuel
               <span class="title1-span">Fitness</span>
-              <span class="banner-line">
-                <a class="bann-line" href="#"><img src="./images/Banner-lines.png" alt=""></a>
-              </span>
             </h1>
             <div class="visit-button">
              <a class="banner-button" href="#">
@@ -126,10 +145,163 @@
     </div>
    </div>
    <!-- Banner Ends -->
-    <!-- Card section starts -->
-     
-    
+    <!-- Variety of workout section starts -->
+    <section class="vow-sec">
+      <div class="container">
+        <div class="swiper workout-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="workout-card">
+          <div class="workout-card-wrpr">
+            <div class="workout-header">
+            Personal Training
+          </div>
+          <div class="workout-card-order">01</div>
+          <div class="workout-img">
+            <img src="./images/Personal Training.png" alt="Personal Training">
+          </div>
+        </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="workout-card">
+          <div class="workout-card-wrpr">
+            <div class="workout-header">
+            Group Workout
+          </div>
+          <div class="workout-card-order">02</div>
+          <div class="workout-img Mask-group">
+            <img src="./images/Mask group 1.png" alt="Group Workout">
+          </div>
+        </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="workout-card">
+          <div class="workout-card-wrpr">
+            <div class="workout-header">
+            Muscle Building
+          </div>
+          <div class="workout-card-order">03</div>
+          <div class="workout-img Muscle-Building">
+            <img src="./images/Muscle Building.png" alt="Muscle Building">
+          </div>
+        </div>
+        </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="workout-card">
+          <div class="workout-card-wrpr">
+            <div class="workout-header">
+            Personal Training
+          </div>
+          <div class="workout-card-order">04</div>
+          <div class="workout-img">
+            <img src="./images/Personal Training.png" alt="Personal Training">
+          </div>
+        </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Variety of workout section ends -->
+     <!-- About section starts -->
+      <section class="about-section">
+        <div class="container about-container">
+         <div class="row about-row">
+          <div class="col-xl-6 col-12">
+            <div class="about-header">
+              <h2 class="title-2">ABOUT OUR GYM
+                <div class="frame-line about-line">
+                  <img src="./images/yellow stripes.png" alt="yellow stripes">
+                </div>
+              </h2>
+            </div>
+         </div>
+         <div class="col-xl-6 col-12">
+          <div class="aboutheader-para">
+            <p class="para about-para">
+              Empowering Every Body to Move Stronger, Live Better, and Go Further
+            </p>
+          </div>
+         </div>
+        </div>
+        <div class="row bottomabout-row">
+          <div class="col-xl-6 col-12">
+            <figure class="about-image">
+              <img src="./images/About_image.png" alt="About_image">
+              <div class="js-tilt-glare" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; border-radius: inherit;"></div>
+                <div class="js-tilt-glare-inner" style="position: absolute; top: 50%; left: 50%; pointer-events: none; width: 100%; height: 100%; transform: rotate(180deg) translate(-50%, -50%); transform-origin: 0% 0%; background: rgba(255, 255, 255, 0.5); background: linear-gradient( to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); width: 596px; height: 596px; opacity: 0">
+                </div>
+            </figure>
+          </div>
+          <div class="col-xl-6 col-12">
+            <div class="about-content">
+              <h3 class="title-3">We believe fitness is more than just physical. It’s about building confidence, discipline, and a lifestyle you can be proud of.</h3>
+              <div class="aboutpara-box">
+                <p class="para-2">Founded with  the version of  creating a spacet for all fitness levels .Our gym offers expert guidence modern equipment and an uplifting atmosphere to help you achieve your goals.</p>
+                <p class="para-2">Whether you’re a beginner or a seasoned athlete. We’re here to support your journey with personalized training, diverse programs and a community that
+motivates you every step of the way</p>
+              </div>
+              <div class="customer-care">
+                <a href class="cst-icon">
+                  <img src="./images/calling.png" alt="calling">
+                </a>
+                <div class="cst-para">
+                  <p class="support cst-support">CUSTOMER SUPPORT</p>
+                  <p class="support cst-number">(888)4000-2424</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About our gym section ends -->
+       <!-- Services section starts -->
+        <section class="services-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-xl-3">
+                <div class="service-header">
+                  <h4 class="title-4">Services</h4>
+                </div>
+              </div>
+              <div class="col-xl-9 col-12">
+                <div class="service-training">
+                  <a href="#" class="services-link">
+                    <h4 class="training-title">PERSONAL TRAINING</h4>
+                    <div class="training-image">
+                      <img src="./images/About Rectangle.png" alt="About Rectangle">
+                    </div>
+                    <i class="fa-solid fa-arrow-right right-arrow"></i>
+                  </a>
+                </div>
+                <div class="service-training-1">
+                  <a href="#" class="service-link-1">
+                    <h4 class="training-title-1">GROUP TRAINING</h4>
+                    <i class="fa-solid fa-arrow-right right-arrow-1"></i>
+                  </a>
+                </div>
+                <div class="service-training-2">
+                  <a href="#" class="service-link-2">
+                    <h4 class="training-title-2">CORPORATE TRAINING</h4>
+                    <i class="fa-solid fa-arrow-right right-arrow-2"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- Services section ends -->
+ <!-- About our gym section starts -->
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <script src="../coach-slider.js"></script>
+   <!-- Swiper JS CDN Link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
